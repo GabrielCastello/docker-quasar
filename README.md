@@ -1,26 +1,14 @@
-# Quasar App (quasarApp)
+# docker-quasar
 
-A Quasar Framework app
+## Description
 
-## Install the dependencies
-```bash
-yarn
+Simple quasar app running on docker w/ docker-compose for development
+
+## How to run
+
+### Development
+
+```sh
+$ docker-compose -f docker-compose.dev.yml up --build
+
 ```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
-
-### Lint the files
-```bash
-yarn run lint
-```
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
