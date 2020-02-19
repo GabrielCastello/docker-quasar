@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  docker_quasar:
+    image: docker_quasar
+    build:
+      context: .
+      dockerfile: ./docker/development/Dockerfile
+    restart: always
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 8080:8080
+    command: /bin/sh -c "yarn && quasar dev"
